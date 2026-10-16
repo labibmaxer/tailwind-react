@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Membership",
+    "price": 30,
+    "description": "Essential access for individual fitness enthusiasts.",
+    "features": [
+      "Access to gym floor & weights",
+      "Locker room access",
+      "Free high-speed Wi-Fi",
+      "1 Complimentary fitness consultation"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Standard Fitness Plan",
+    "price": 50,
+    "description": "Most popular choice for active members and group lovers.",
+    "features": [
+      "All Basic features included",
+      "Unlimited group fitness classes",
+      "Access to sauna & steam room",
+      "10% Discount on gym merch & supplements"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "VIP Elite Membership",
+    "price": 90,
+    "description": "Complete premium experience with personalized guidance.",
+    "features": [
+      "All Standard features included",
+      "2 Personal training sessions per month",
+      "Customized monthly nutrition plan",
+      "24/7 Priority gym access & guest pass (1/month)"
+    ]
+  }
+]
