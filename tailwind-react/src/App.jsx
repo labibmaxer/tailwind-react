@@ -4,15 +4,24 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
 import Daisyui from './components/daisyui'
+import { Suspense } from 'react';
 import Navbar from './components/navbar'
+import Pricing from './components/pricing'
+
+const pricingPromise = fetch ('pricingData.json').then(res => res.json());
 function App() {
   
 
   return (
     <>
-    <Navbar className='justify-baseline'></Navbar>
-    <Daisyui></Daisyui>
-     
+    <header>
+ 
+     </header>
+     <main>
+      <Suspense fallback = {<span className="loading loading-spinner loading-md"></span>}>
+       <Pricing  pricingPromise={ pricingPromise}></Pricing>
+      </Suspense>
+     </main>
     </>
   )
 }

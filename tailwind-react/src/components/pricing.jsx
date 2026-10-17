@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { use } from 'react';
+ import PricingCard from '../pricing.card/pricingCard';
+const Pricing = ({ pricingPromise }) => {
+    const pricingData = use(pricingPromise);
 
-const pricing = () => {
     return (
-        <div>
-            
+        <div> 
+            <h2 className='text-5xl'>Get our Membership</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+            {pricingData.map((pricing) => (
+                <PricingCard key={pricing.id} pricing={pricing} />
+            ))}
+        </div>
         </div>
     );
 };
 
-export default pricing;
+export default Pricing;
