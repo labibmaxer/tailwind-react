@@ -7,6 +7,7 @@ import Daisyui from './components/daisyui'
 import { Suspense } from 'react';
 import Navbar from './components/navbar'
 import Pricing from './components/pricing'
+import ResultCharts from './resultsChart/resultCharts'
 
 const pricingPromise = fetch ('pricingData.json').then(res => res.json());
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Suspense fallback = {<span className="loading loading-spinner loading-md"></span>}>
        <Pricing  pricingPromise={ pricingPromise}></Pricing>
       </Suspense>
+       <ResultCharts></ResultCharts>
      </main>
     </>
   )
